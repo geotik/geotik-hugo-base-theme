@@ -48,18 +48,30 @@ paginate = 10
     name = "Posts"
     url = "/posts/"
     weight = 2
-    [[menu.main]]
-        identifier = "posts-nested-1"
-        name = "First Nested Posts"
-        url = "/posts/first-nested"
-        parent = "posts"
-        weight = 1
-    [[menu.main]]
-        identifier = "posts-nested-2"
-        name = "Second Nested Posts"
-        url = "/posts/second-nested"
-        parent = "posts"
-        weight = 2
+[[menu.main]]
+    identifier = "example-nested-1"
+    name = "First Nested example"
+    url = "/example/first-nested"
+    parent = "Example"
+    weight = 1
+[[menu.main]]
+    identifier = "example-nested-2"
+    name = "Second Nested example"
+    url = "/example/second-nested"
+    parent = "Example"
+    weight = 2
+[[menu.main]]
+    identifier = "another-nested-1"
+    name = "Another 2"
+    url = "/another/first-nested"
+    parent = "Another"
+    weight = 1
+[[menu.main]]
+    identifier = "another-nested-2"
+    name = "Another 1"
+    url = "/another/second-nested"
+    parent = "Another"
+    weight = 2
 
 
 # Enable only tags taxonomy

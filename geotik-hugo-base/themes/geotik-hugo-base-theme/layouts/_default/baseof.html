@@ -13,34 +13,17 @@
 	<header class="header">
 		{{- partial "header/base.html" . -}}
 	</header>
-	<main class="main">
-		
-		
-		<nav class="nav">
-			<ul class="menu">
-				{{ range .Site.Menus.main }}
-				<li>
-					<span>{{ .Name }}</span>
-					{{ if .HasChildren }}
-					<span class="drop-icon" for="{{ .Name }}">▾</span>
-					<ul class="sub-menu">
-						{{ range .Children }}
-						<li>
-							<span>{{ .Name }}</span>
-						</li> 
-						{{ end }}
-					</ul>
-				   {{ end }}
-				</li>
-				{{ end }}
-			</ul>
-		</nav>
-
-
-		{{- block "main" . }}{{- end }}
+	
+	<main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<div class="mx-auto max-w-3xl">
+			{{- block "main" . }}{{- end }}
+		</div>
 	</main>
-	<footer class="footer">
-		{{- partial "footer/base.html" . -}}
+		
+	<footer class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<div class="mx-auto max-w-3xl">
+			{{- partial "footer/base.html" . -}}
+		</div>
 	</footer>
 	{{ if .IsPage }}
 	{{- partial "page/infinite-scroll.html" . -}}
