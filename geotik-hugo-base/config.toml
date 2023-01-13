@@ -1,0 +1,114 @@
+# Default language if you have a multi-language setup
+DefaultContentLanguage = "en"
+
+baseURL = "https://example.com"
+
+theme = "geotik-hugo-base-theme"
+
+pygmentsUseClasses = true
+
+# Number of posts shown per page (dafault: 10)
+paginate = 10
+
+# Language sections
+[languages]
+    [languages.en]
+        contentDir = "content/en"
+        languageName = "English"
+        languageCode = "en"
+        title = "Geotik Hugo Base theme!"
+        description = "This is an template for the Geotik Hugo Base theme!"
+        weight = 1
+    [languages.pl]
+        contentDir = "content/pl"
+        languageName = "Polish"
+        languageCode = "pl"
+        title = "Geotik Hugo Base theme!"
+        description = "To jest template dla Geotik Hugo Base theme!"
+        weight = 1
+        [[languages.pl.menu.main]]
+            identifier = "home"
+            name = "Strona główna"
+            url = "/pl/"
+            weight = 1
+        [[languages.pl.menu.main]]
+            identifier = "posts"
+            name = "Posty"
+            url = "/pl/posts/"
+            weight = 2
+
+# Menu elements
+[[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+    [[menu.main]]
+        identifier = "posts-nested-1"
+        name = "First Nested Posts"
+        url = "/posts/first-nested"
+        parent = "posts"
+        weight = 1
+    [[menu.main]]
+        identifier = "posts-nested-2"
+        name = "Second Nested Posts"
+        url = "/posts/second-nested"
+        parent = "posts"
+        weight = 2
+
+
+# Enable only tags taxonomy
+[taxonomies]
+    tag = "tags"
+
+[params]
+    copyright = "Geotik Hugo Base" # Name shown on footer copyright
+    themeColor = "#333" # Theme color displayed on mobile browsers
+
+    # Default AMP components for the whole site
+    ampElements = ["amp-iframe", "amp-analytics", "amp-social-share", "amp-install-serviceworker"]
+
+    # Google Analytics code
+    # googleAnalytics = "UA-xxxxxxxxx-x"
+
+    # Adsense publisher code
+    # adsensePublisher = "ca-pub-123456789"
+
+    # Comments Iframe URL
+    # commentsEmbedUrl = "https://comments.example.com"
+
+    # Social sites for metatags
+    facebookSite = "example"
+    twitterSite = "@example"
+
+    # Structured data elements
+    socialProfiles = ["https://twitter.com/example","https://www.linkedin.com/in/example/","https://github.com/example"]
+
+    alternatePageName = "Geotik Hugo Basemperage Example"
+    organizationLogo = "/logo.png"
+    organizationName = "Asur"
+
+    publisherName = "Geotik"
+    publisherLogo = "/logo-amp-article.png"
+    publisherLogoWidth = 600
+    publisherLogoHeight = 60
+
+[outputs]
+    home = [ "HTML", "RSS", "SearchIndex"]
+
+[outputFormats]
+    [outputFormats.SearchIndex]
+        mediaType= "application/json"
+        baseName= "search"
+        isPlainText= true
+        notAlternative= true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

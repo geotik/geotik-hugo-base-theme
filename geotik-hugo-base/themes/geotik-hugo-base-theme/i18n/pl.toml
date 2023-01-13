@@ -1,0 +1,44 @@
+[home]
+other = "Strona główna"
+[notFound]
+other = "Nie znaleziono strony"
+[openDropdown]
+other = "Otwórz menu"
+[search]
+other = "Wyszukaj wpis..."
+[goBackHome]
+other = "Wróć do strony głównej"
+[by]
+other = "przez"
+[tags]
+other = "Tagi"
+[share]
+other = "Udostępnij treść"
+[shareFacebook]
+other = "Udostępnij na Facebook"
+[shareTwitter]
+other = "Udostępnij na Twitter"
+[shareLinkedin]
+other = "Udostępnij na Linkedin"
+[sharePinterest]
+other = "Udostępnij na Pinterest"
+[toc]
+other = "Spis treści"
+[related]
+other = "Powiązane odczyty 📖"
+[comments]
+other = "Zostaw komentarz!  💬"
+[months]
+other = "miesiące"
+[published]
+other = "{{.Day}} {{.Month}} {{.Year}}"
+[next]
+other = "Następny"
+[previous]
+other = "Poprzedni"
+[noAd]
+other = "Brak reklamy dla Ciebie!"
+[keepReading]
+other = "Czytaj dalej..."
+[authorCta]
+other = "Jeżeli Ci się spodobało skomentuj i udostępnij!"

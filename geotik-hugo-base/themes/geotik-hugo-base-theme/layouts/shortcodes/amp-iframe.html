@@ -1,0 +1,10 @@
+<amp-iframe allowfullscreen
+	{{ with .Params.class }} class="{{ . }}"{{ end }}
+	{{ with .Params.height }} height="{{ . }}"{{ end }}
+	{{ with .Params.width }} width="{{ . }}"{{ end }}
+	{{ with .Params.layout }} layout="{{ . }}"{{ end }}
+	{{ with .Params.scrolling }} scrolling="{{ . }}"{{ end }}
+	{{ with .Params.frameborder }} frameborder="{{ . }}"{{ end }}
+	{{ with .Params.sandbox }} sandbox="{{ . }}"{{ end }}
+	{{ with .Params.src }} src="{{ . | absURL }}"{{ end }}>
+</amp-iframe>
