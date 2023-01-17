@@ -4,7 +4,8 @@
   "description": "![Amperage theme](https://raw.githubusercontent.com/asurbernardo/amperage/master/images/banner.png)",
   "main": "index.js",
   "scripts": {
-    "build-tw": "npx tailwindcss -i ./assets/main.css -o ./assets/tailwind-build.css"
+    "build-tw": "npx tailwindcss -i ./assets/main.css -o ./assets/tailwind-build.css",
+    "watch-tw": "npx tailwindcss -i ./assets/main.css -o ./assets/tailwind-build.css --watch"
   },
   "keywords": [],
   "author": "",

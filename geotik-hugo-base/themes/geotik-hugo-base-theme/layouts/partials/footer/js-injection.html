@@ -1,0 +1,7 @@
+<!-- JavaScript and dependencies -->
+{{ $seed := now.Unix }} {{ $randomString := md5 $seed }} {{
+$jsBundleRandomFileName := print $randomString ".js" }} {{ $opts := dict
+"targetPath" $jsBundleRandomFileName }} {{ $js := resources.Get "js/main.js" |
+js.Build $jsBundleRandomFileName }}
+
+<script src="{{ $js.Permalink }}" defer></script>
