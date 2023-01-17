@@ -1,0 +1,28 @@
+<div class="bg-white">
+    <div class="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+      <div class="space-y-8 sm:space-y-12">
+        <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
+          <h2 class="text-left text-4xl font-normal text-gray-600 tracking-tight sm:text-4xl">WHO USES <br> GLP 2.0?</h2>
+        </div>
+        <ul role="list" class="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-6">
+            {{ range $.Site.Data.testimonials }}
+                <li>
+                    <div class="block rounded-lg shadow-lg bg-white">
+                    <div class="overflow-hidden rounded-t-lg h-14" style="background-color: #4A4A4A;"></div>
+                    <div class="w-20 -mt-8 overflow-hidden border-2 border-white rounded-full mx-auto bg-white">
+                        <svg class="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <h4 class="text-xs font-semibold">{{ .title }}</h4>
+                        <p class="mt-2 text-gray-600 text-xs">{{ .content }}</p>
+                    </div>
+                    </div>
+                </li>
+            {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+  

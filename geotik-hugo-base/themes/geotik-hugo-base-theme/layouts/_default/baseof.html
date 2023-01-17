@@ -6,20 +6,24 @@
 </head>
 
 <body>
+	{{- partial "contact-form" . -}}
 	{{- partial "page/auto-ads.html" . -}}
 	{{- partial "page/install-sw.html" . -}}
 	{{- partial "page/analytics.html" . -}}
 	{{- partial "structured-data/base.html" . -}}
+
 	<header class="header">
 		{{- partial "header/base.html" . -}}
 	</header>
-	
+
+	{{ partial "contact-form.html" . }}
+
 	<main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="mx-auto max-w-3xl">
 			{{- block "main" . }}{{- end }}
 		</div>
 	</main>
-		
+
 	<footer class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="mx-auto max-w-3xl">
 			{{- partial "footer/base.html" . -}}

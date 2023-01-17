@@ -1,0 +1,7 @@
+amp-accordion section[expanded] .show-more {
+    display: none;
+}
+
+amp-accordion section:not([expanded]) .show-less {
+    display: none;
+}

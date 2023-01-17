@@ -1,4 +1,7 @@
 <style amp-custom>
+    {{ with resources.Get "styles.scss" | resources.ToCSS | resources.Minify  }}
+        {{ .Content | safeCSS }}
+    {{ end }}
     {{ with resources.Get "tailwind-build.css" | resources.Minify }}
         {{ .Content | safeCSS }}
     {{ end }}

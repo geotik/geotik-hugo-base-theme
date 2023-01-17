@@ -60,18 +60,6 @@ paginate = 10
     url = "/example/second-nested"
     parent = "Example"
     weight = 2
-[[menu.main]]
-    identifier = "another-nested-1"
-    name = "Another 2"
-    url = "/another/first-nested"
-    parent = "Another"
-    weight = 1
-[[menu.main]]
-    identifier = "another-nested-2"
-    name = "Another 1"
-    url = "/another/second-nested"
-    parent = "Another"
-    weight = 2
 
 
 # Enable only tags taxonomy
