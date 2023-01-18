@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ⚡ lang="{{.Site.LanguageCode}}">
+  <head>
+    {{- partial "head/base.html" . -}}
+  </head>
+  <body>
+    <header class="header">
+      <div class="text-center">👷‍♂️</div>
+      {{- partial "header/base.html" . -}}
+    </header>
+    <main class="main ml-4">
+      baseof layout from <b>/page/product-baseof.html</b>{{- block "main" .
+      }}{{- end }}
+    </main>
+  </body>
+</html>

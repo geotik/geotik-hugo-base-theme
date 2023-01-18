@@ -36,6 +36,16 @@ paginate = 10
             name = "Posty"
             url = "/pl/posts/"
             weight = 2
+             [[languages.pl.menu.main]]
+            identifier = "product"
+            name = "Produkt"
+            url = "/pl/page/product"
+            weight = 2
+             [[languages.pl.menu.main]]
+            identifier = "solutions"
+            name = "Rozwiązania"
+            url = "/pl/page/solutions"
+            weight = 2
 
 # Menu elements
 [[menu.main]]
