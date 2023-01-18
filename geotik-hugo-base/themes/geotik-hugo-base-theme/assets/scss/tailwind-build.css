@@ -793,6 +793,10 @@ select {
   margin-bottom: -0.5rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -839,10 +843,6 @@ select {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .mt-6 {
